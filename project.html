@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Xie</title>
+  <meta name="description" content="Selected portfolio work by Ryan Xie.">
+  <link rel="canonical" href="https://ryanxieart.com/project.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html#all">ALL</a>
+      <a href="index.html#story-art">STORY ART</a>
+      <a href="index.html#personal-projects">PERSONAL PROJECTS</a>
+      <a href="index.html#graphic-design">GRAPHIC DESIGN</a>
+      <a href="index.html#sketch-book">SKETCH BOOK</a>
+      <a href="index.html#contact">CONTACT</a>
+    </nav>
+
+    <a class="logo" href="index.html#all">RYAN XIE</a>
+
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="mobile-panel" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html#all">ALL</a>
+      <a href="index.html#story-art">Story Art</a>
+      <a href="index.html#personal-projects">Personal Projects</a>
+      <a href="index.html#graphic-design">graphic design</a>
+      <a href="index.html#sketch-book">sketch book</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="site-content">
+    <section class="project-detail" aria-live="polite">
+      <a class="back-link" href="index.html#all">ALL</a>
+      <div class="detail-gallery"></div>
+      <div class="detail-copy">
+        <p class="detail-category"></p>
+        <h1 class="detail-title"></h1>
+        <p class="detail-text"></p>
+      </div>
+      <section class="related-projects" aria-label="You may also like" hidden>
+        <h2>YOU MAY ALSO LIKE</h2>
+        <div class="related-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Ryan Xie</span>
+    <a href="index.html#ryanxieeditor" aria-label="Open private editor">Editor</a>
+  </footer>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Expanded artwork" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+    <button class="lightbox-prev" type="button" aria-label="Previous image">‹</button>
+    <img class="lightbox-image" src="" alt="">
+    <button class="lightbox-next" type="button" aria-label="Next image">›</button>
+    <p class="lightbox-count"></p>
+  </div>
+
+  <script src="gallery-data.js?v=6"></script>
+  <script src="project.js?v=13"></script>
+</body>
+</html>
+

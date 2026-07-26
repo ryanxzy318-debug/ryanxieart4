@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Xie</title>
+  <meta name="description" content="Ryan Xie portfolio: story art, personal projects, graphic design, sketchbook, plein air, collage, 3D and character design.">
+  <link rel="canonical" href="https://ryanxieart.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="active" href="#all" data-filter="all">ALL</a>
+      <a href="#story-art" data-filter="story-art">STORY ART</a>
+      <a href="#personal-projects" data-filter="personal-projects">PERSONAL PROJECTS</a>
+      <a href="#graphic-design" data-filter="graphic-design">GRAPHIC DESIGN</a>
+      <a href="#sketch-book" data-filter="sketch-book">SKETCH BOOK</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+
+    <a class="logo" href="#all">RYAN XIE</a>
+
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="mobile-panel" aria-hidden="true">
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a class="active" href="#all" data-filter="all">ALL</a>
+      <a href="#story-art" data-filter="story-art">Story Art</a>
+      <a href="#personal-projects" data-filter="personal-projects">Personal Projects</a>
+      <a href="#graphic-design" data-filter="graphic-design">graphic design</a>
+      <a href="#sketch-book" data-filter="sketch-book">sketch book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="site-content" id="all">
+    <section class="project-grid" aria-label="Portfolio projects"></section>
+
+    <section class="contact" id="contact" aria-label="Contact">
+      <h1>CONTACT</h1>
+      <p>For commissions, collaborations, or portfolio inquiries:</p>
+      <a class="contact-link" href="mailto:hello@ryanxieart.com">hello@ryanxieart.com</a>
+    </section>
+
+    <section class="admin" id="ryanxieeditor" aria-label="Portfolio editor" hidden>
+      <div class="admin-login">
+        <h1>RYAN XIE EDITOR</h1>
+        <p>Enter the editor key to manage project images in this browser.</p>
+        <form class="key-form">
+          <label for="editor-key">编辑密钥</label>
+          <div class="key-row">
+            <input id="editor-key" type="password" autocomplete="current-password" required>
+            <button type="submit">解锁</button>
+          </div>
+          <p class="key-error" role="alert"></p>
+        </form>
+      </div>
+
+      <div class="admin-panel" hidden>
+        <div class="admin-head">
+          <div>
+            <h1>内页图片管理器</h1>
+            <p>在这里添加、删除、拖拽排序内页图片。更改会保存在当前浏览器里。</p>
+          </div>
+          <button class="secondary-button" type="button" data-action="lock">锁定</button>
+        </div>
+
+        <div class="image-editor">
+          <div class="image-editor-controls">
+            <label>
+              选择作品
+              <select class="image-project-select"></select>
+            </label>
+            <label>
+              添加位置
+              <select class="image-add-position">
+                <option value="end">放在最后</option>
+                <option value="start">放在最前</option>
+              </select>
+            </label>
+            <label class="editor-drop-zone">
+              <strong>拖拽图片到这里</strong>
+              <span>或者点击这里选择图片</span>
+              <input class="image-add-input" type="file" accept="image/*" multiple>
+            </label>
+            <label class="cover-drop-zone">
+              <strong>换首页封面</strong>
+              <span>拖一张图到这里</span>
+              <input class="cover-add-input" type="file" accept="image/*">
+            </label>
+            <button class="secondary-button" type="button" data-action="reset-gallery">恢复本页图片</button>
+            <a class="secondary-button editor-open-project" href="project.html?id=eva-annie">打开内页预览</a>
+          </div>
+          <p class="image-editor-status">输入密钥后，这里只管理内页图片。</p>
+          <div class="image-editor-grid" aria-label="当前作品图片"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Ryan Xie</span>
+    <a href="#ryanxieeditor" aria-label="Open private editor">Editor</a>
+  </footer>
+
+  <script src="gallery-data.js?v=6"></script>
+  <script src="script.js?v=14"></script>
+</body>
+</html>
+
+
